@@ -1,14 +1,17 @@
-<form class="example-container">
-  <mat-form-field appearance="outline">
+<form class="edit-shopping-list-container">
+  <mat-form-field appearance="fill">
     <mat-label>Name</mat-label>
-    <input matInput placeholder="Ingredient.." />
+    <input #input matInput placeholder="Ingredient.." />
+    <mat-hint align="end">{{ input.value?.length || 0 }}/10</mat-hint>
   </mat-form-field>
 
   <mat-form-field appearance="fill">
     <mat-label>Count</mat-label>
     <input matInput type="number" placeholder="Ex. 12" />
+    <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
     <!-- <span matSuffix>px</span> -->
   </mat-form-field>
+  <br />
   <br />
   <button mat-raised-button color="primary" class="btn">Add</button>
   <button mat-raised-button color="warn" class="btn">Delete</button>

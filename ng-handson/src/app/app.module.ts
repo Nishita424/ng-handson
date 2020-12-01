@@ -16,6 +16,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatInputModule } from '@angular/material/input';
 
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -40,7 +42,6 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     MatSliderModule,
     MatListModule,
     MatTableModule,
@@ -51,6 +52,10 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     MatButtonModule,
     MatSidenavModule,
     MatFormFieldModule,
+    MatDividerModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
