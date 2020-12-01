@@ -8,10 +8,10 @@
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
+    <button mat-menu-item (click)="onSelect('recipe')">
       <mat-icon>fastfood</mat-icon> <span>Recipes</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item (click)="onSelect('shopping-list')">
       <mat-icon>shopping_cart</mat-icon> <span>Shopping List</span>
     </button>
   </mat-menu>
