@@ -1,0 +1,36 @@
+<mat-toolbar>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Recipes</button>
+    <button mat-menu-item>Shopping List</button>
+  </mat-menu>
+  &nbsp;
+  <span>Recipe Cookbook</span>
+
+  <span class="example-spacer"></span>
+
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="data"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon class="tooltip">more_vert</mat-icon>
+  </button>
+  <mat-menu #data="matMenu">
+    <button mat-menu-item>
+      <mat-icon>cloud_download</mat-icon>
+      <span>Fetch data</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>done</mat-icon>
+      <span>Save data</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

@@ -1,0 +1,23 @@
+<app-recipe-list></app-recipe-list>
+
+<mat-table [dataSource]="dataSource">
+  <!-- User name Definition -->
+  <ng-container matColumnDef="recipe-list">
+    <mat-header-cell *matHeaderCellDef> Recipe list </mat-header-cell>
+    <mat-cell *matCellDef="let row">
+      <app-recipe-list></app-recipe-list>
+    </mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="recipe-detail">
+    <mat-header-cell *matHeaderCellDef> Recipe detail </mat-header-cell>
+    <mat-cell *matCellDef="let row">
+      <app-recipe-detail></app-recipe-detail>
+    </mat-cell>
+  </ng-container>
+  <mat-header-row
+    *matHeaderRowDef="['recipe-list', 'recipe-detail']"
+  ></mat-header-row>
+  <mat-row
+    *matRowDef="let row; columns: ['recipe-list', 'recipe-detail']"
+  ></mat-row>
+</mat-table>
