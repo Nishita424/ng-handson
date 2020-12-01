@@ -1,5 +1,7 @@
 <mat-list>
-  <mat-list-item>Item1</mat-list-item>
-  <mat-list-item>Item2</mat-list-item>
-  <mat-list-item>Item3</mat-list-item>
+  <mat-list-item *ngFor="let ing of ingredients">
+    <a style="cursor: pointer"
+      >{{ ing.name }} ({{ ing.amount }})</a
+    ></mat-list-item
+  >
 </mat-list>
