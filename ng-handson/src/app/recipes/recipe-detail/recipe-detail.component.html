@@ -1,1 +1,27 @@
-<p>recipe-detail works!</p>
+<div>
+  <img src="" alt="" />
+</div>
+<div>
+  <h1>Recipe name</h1>
+</div>
+<div>
+  <button mat-raised-button [matMenuTriggerFor]="change" color="accent">
+    Manage Recipe
+  </button>
+  <mat-menu #change="matMenu">
+    <button mat-menu-item>
+      <mat-icon>add_shopping_cart</mat-icon>
+      <span>To shopping list</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>edit</mat-icon>
+      <span>Edit recipe</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>delete</mat-icon>
+      <span>Delete recipe</span>
+    </button>
+  </mat-menu>
+</div>
+<div>description</div>
+<div>Ingredients</div>

@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -45,6 +46,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     MatMenuModule,
     MatCardModule,
     MatButtonModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

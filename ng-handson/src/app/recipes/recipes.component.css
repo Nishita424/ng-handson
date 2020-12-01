@@ -1,0 +1,8 @@
+mat-drawer-container {
+  height: 80vh;
+  width: 100vw;
+}
+
+mat-drawer {
+  width: 40%;
+}
