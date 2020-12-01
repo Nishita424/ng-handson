@@ -11,6 +11,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 import { HeaderComponent } from './header/header.component';
 import { RecipesComponent } from './recipes/recipes.component';
@@ -41,9 +43,10 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
+    MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [MatIconModule],
 })
 export class AppModule {}
