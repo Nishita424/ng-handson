@@ -1,1 +1,22 @@
-<mat-list-item> Pepper </mat-list-item>
+<a href="#" (click)="onSelectedItem()">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ recipe.name }}</mat-card-title>
+      <mat-card-subtitle>{{ recipe.type }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>A new test recipe description</p>
+    </mat-card-content>
+    <img
+      mat-card-image
+      class="inner-img"
+      [src]="recipe.imagePath"
+      alt="{{ recipe.name }}"
+    />
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>
+</a>

@@ -2,9 +2,17 @@
 
 <mat-drawer-container class="example-container">
   <mat-drawer mode="side" opened
-    ><app-recipe-list></app-recipe-list
+    ><app-recipe-list
+      (recipeWasSelected)="selectedItem = $event"
+    ></app-recipe-list
   ></mat-drawer>
   <mat-drawer-content
-    ><app-recipe-detail></app-recipe-detail
-  ></mat-drawer-content>
+    ><app-recipe-detail
+      *ngIf="selectedItem; else infoText"
+      [recipe]="selectedItem"
+    ></app-recipe-detail>
+    <ng-template #infoText>
+      <p>Please select a recipe !</p>
+    </ng-template>
+  </mat-drawer-content>
 </mat-drawer-container>

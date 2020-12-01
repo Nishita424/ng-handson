@@ -1,8 +1,8 @@
 <div>
-  <img src="" alt="" />
+  <img [src]="recipe.imagePath" alt="{{ recipe.imagePath }}" />
 </div>
 <div>
-  <h1>Recipe name</h1>
+  <h1>{{ recipe.name }} ({{ recipe.type }})</h1>
 </div>
 <div>
   <button mat-raised-button [matMenuTriggerFor]="change" color="accent">
@@ -23,5 +23,5 @@
     </button>
   </mat-menu>
 </div>
-<div>description</div>
+<div>{{ recipe.description }}</div>
 <div>Ingredients</div>
