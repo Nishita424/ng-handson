@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipes.component.css'],
 })
 export class RecipesComponent implements OnInit {
+  dataSource = [
+    { username: 'A', age: 30, title: 'Title1' },
+    { username: 'B', age: 31, title: 'Title2' },
+    { username: 'C', age: 32, title: 'Title3' },
+  ];
   constructor() {}
 
   ngOnInit(): void {}
